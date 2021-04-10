@@ -10,7 +10,7 @@ This is a repo for sharing ideas/codes/demo's related to Numerical Methods used 
 ## Trends in Numerical Methods used in CFD/ FEA/ ML and DL these days
 Lets start with 
 ### 1.) Differentiation
-A lot depends on how we approximate differential operators or calculate gradients in these numerical methods. To put it succinctly, we have not been taught well how to approximate these differential operators properly. If one keeps up with major ways of approximating differential operators are by following way, 
+A lot depends on how we approximate differential operators or calculate gradients in these numerical methods. To put it succinctly, there are challenges to approximate these differential operators properly, and its a useful skill for a computational science student. If one keeps up with major ways of approximating differential operators are by following way, 
 - **Automatic differentiation** (a numerical approach used in automatic differentiation libraries like Tensorflow/PyTorch/Zygote. An ongoing discussion is [here](https://github.com/yewalenikhil65/Numerical-methods-HPC-aspects/discussions/1)) 
 - **Traditional Numerical differentiation** (good old Taylor series, majorly used in CFD softwares) We have been exposed to traditional numerical differentiation a lot times, but a bulk of us don't know how to create automatically stencils and Differential operators matrices and applying boundary conditions on them. (On going discussion of creating general finite difference stencils, [here](https://github.com/yewalenikhil65/Numerical-methods-HPC-aspects/discussions/3))
 - **Symbolic differentiation** (used in Maple/Mathematica/Sage like Libraries) 
