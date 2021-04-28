@@ -101,10 +101,9 @@ plot!(h, err_cd, xaxis=:log, yaxis=:log,
             label = "Central difference",legend=:outertopright,lw=2)
 plot!(xlabel = " Step-size(h) ", ylabel = " |(Error)| ")
 ```
-![Image](assets/finite_diff.png)
-The figure above verifies our previous statements , 
-#L54-L58
+![](https://github.com/yewalenikhil65/Numerical-methods-HPC-aspects/blob/master/assets/finite_diff.png)</br>
 
+The figure above verifies our previous statement of choosing smartly the value of $h$ to strike a balance in `truncation error` and `round-off error`
 But, we can do better than this, using an equally simple technique for estimating above mentioned first order derivatives.
 
 ## Complex-step differentiation
@@ -170,9 +169,9 @@ plot!(h, err_compdiff, xaxis=:log, yaxis=:log,
        linestyle =:dashdot, ylims=(eps(Float64), 1))
 
 ```
+![](https://github.com/yewalenikhil65/Numerical-methods-HPC-aspects/blob/master/assets/complex_step.png)</br>
 
-Clearly,
-
+As we can see,unlike finite-difference schemes, smaller choice of $h$ does not decrease the accuracy using complex-step differentiation method.
 
 ## Is complex-step differentiation the best method ?
 Certainly not ! We would like to highlight some important observations about this method.
