@@ -3,7 +3,7 @@
 This is a repo for sharing ideas/codes/demo's related to Numerical Methods used in CFD, FEA, DL, ML and/or its HPC aspects, with a purpose of academic, professional or lesiure satisfaction. Be organized !!!
 
 ## Guidelines for contributors
-- For those interested in contributing to the demonstrations, please contribute your ideas [here](https://github.com/yewalenikhil65/Numerical-methods-HPC-aspects/discussions) in Julia/MATLAB like readable pseudocode syntax. (Julia is exactly MATLAB like syntaxwise, so don't be alarmed if you see actual code in it too). Julia and/or MATLAB should be preferable languages that you use for contribution to new ideas/concepts as demonstrations. For HPC related stuff, you can digress later into other languages if needed.
+- For those interested in contributing to the demonstrations, please contribute your ideas [here](https://github.com/yewalenikhil65/Numerical-methods-HPC-aspects/discussions) in Julia/MATLAB like readable pseudocode syntax. For HPC related stuff, you can digress later into other languages if needed.
 - Request to review your contributions from other contributors
 - Get familiar with github first or keep a github [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images) ready with you. It should help you in effectively expressing yourself in `Issues` or `PRs` or `Discussions`
 - Currently, to view some markdown files in some docs uploaded a [chrome extension](https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjiblcjagnpmdmlgmda) is needed. Will try to remove this dependency soon.
