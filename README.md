@@ -25,3 +25,4 @@ In coming weeks, a small demonstration/blog of these would be added to the repo,
 ### Nice must-watch educational videos/online conferences on YouTube etc. ##
 
 ### Nice must-read type books/online resources/papers ##
+- The complex-step derivative approximation ,ACM Transactions on Mathematical Software September 2003 https://doi.org/10.1145/838250.838251   or https://hal.archives-ouvertes.fr/hal-01483287/document
