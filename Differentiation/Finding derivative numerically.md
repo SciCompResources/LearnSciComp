@@ -24,8 +24,8 @@ $$
 $$
 - **[Upwind differencing](https://en.wikipedia.org/wiki/Upwind_scheme)** Includes a bias towards choosing either side of the grid-points , depending on the characteristic 'flow' observed.
 
-Above-mentioned schemes tell us about computing errors we face in estimating derivative of a function, namely, `truncation error` and `round-off error`, both of which depend on the choice of $h$
-You choose large $h$ and you risk running into `truncation error`.
+Above-mentioned schemes tell us about computing errors we face in estimating derivative of a function, namely, `truncation error` and `round-off error`, both of which depend on the choice of $h$.</br>
+You choose large $h$ and you risk running into `truncation error`.</br>
 You choose too small value of $h$, and you risk into subtracting two very closely spaced numbers (also known as Subtractive cancellation). Thus, resulting in a `round-off error`. More about this can be found [here](https://en.wikipedia.org/wiki/Round-off_error#Roundoff_error_caused_by_floating-point_arithmetic)
 
 
