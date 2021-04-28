@@ -17,12 +17,12 @@ A lot depends on how we approximate differential operators or calculate gradient
 
 In coming weeks, a small demonstration/blog of these would be added to the repo, along with useful references
 
+#### References(more to be added soon) ####
+- The complex-step derivative approximation ,ACM Transactions on Mathematical Software September 2003 https://doi.org/10.1145/838250.838251   or https://hal.archives-ouvertes.fr/hal-01483287/document
+- JuliaCon Talk [Keynote - Tricks and Tips in Numerical Computing | Nick Higham](https://www.youtube.com/watch?v=Q9OLOqEhc64&list=PLP8iPy9hna6Qsq5_-zrg0NTwqDSDYtfQB&index=6)
+- Generation of finite difference formulas on arbitrarily spaced grid, Bengt Fornberg https://doi.org/10.1090/S0025-5718-1988-0935077-0
+- An algorithm for the finite difference approximation of derivatives with arbitrary degree and order of accuracy, by ,H.Z. Hassan ,A.A. Mohamad, G.E. Atteia, Journal of Computational and Applied Mathematics ,https://core.ac.uk/download/pdf/82556232.pdf
+
 
 ## Brief Intro to High Performance Computing
 
-## Resources: 
-
-### Nice must-watch educational videos/online conferences on YouTube etc. ##
-
-### Nice must-read type books/online resources/papers ##
-- The complex-step derivative approximation ,ACM Transactions on Mathematical Software September 2003 https://doi.org/10.1145/838250.838251   or https://hal.archives-ouvertes.fr/hal-01483287/document
