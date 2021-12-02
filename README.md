@@ -1,4 +1,4 @@
-# Numerical-methods-HPC-Aspects
+# Learn Scientific Computing
 
 This is a repo for sharing ideas/codes/demo's related to Numerical Methods used in CFD, FEA, DL, ML and/or its HPC aspects, with a purpose of academic, professional or lesiure satisfaction. Be organized !!!
 
