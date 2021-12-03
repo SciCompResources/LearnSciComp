@@ -1,5 +1,4 @@
 using FFTW
-using LinearAlgebra
 using BenchmarkTools
 using Memoize
 
