@@ -1,1 +1,1 @@
-dump basics, but not tot he objective here
+dump basics, but not to the objective here
