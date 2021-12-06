@@ -6,7 +6,14 @@ The documentation of some example-based blogs based on LearnSciComp tools can be
 # What and How do I contribute ?
 The guidelines and scope of contributions(pull-requests) that are accepted is also discussed in (https://scicompresources.github.io/). Please feel free to check [Discussions](https://github.com/SciCompResources/LearnSciComp/discussions) for knowing current plans, or feel free to create an [issue](https://github.com/SciCompResources/LearnSciComp/issues)
 
-# How to start with LearnSciComp.jl
+# How do I work and test LearnSciComp.jl locally on your computer?
+1) Clone the repository through terminal with `git clone https://github.com/SciCompResources/LearnSciComp.git`
+2) Test cases have been added in `test` folder. You may take a look! 
+3) Start Julia in your favourite IDEs(VS Code, Juno to name a few) or inside Julia REPL
+4) Change directory by setting path to `LearnSciComp` folder using cd("path").
+5) Enter package mode by pressing `]`. Enter `test` to test any newly added tests-cases or newly features added.(And hope the pass!)
+
+# How to start with LearnSciComp.jl features wih julia ?
 1) Get Julia installed through suitable Julia binaries at https://julialang.org/downloads/. 
 2) Start Julia in your favourite IDEs(VS Code, Juno to name a few) or inside Julia REPL
 3) Enter package mode by pressing `]` 
