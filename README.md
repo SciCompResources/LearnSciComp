@@ -11,8 +11,10 @@ The guidelines and scope of contributions(pull-requests) that are accepted is al
 2) Start Julia in your favourite IDEs(VS Code, Juno to name a few) or inside Julia REPL
 3) Enter package mode by pressing `]` 
 4) Enter `add https://github.com/SciCompResources/LearnSciComp.git` while you are in package mode
-5) Enter`precompile`  while you are in package mode to check the workings of `LearnSciComp.jl` package.
+5) Enter back to julia mode. Precompile by entering `using LearnSciComp`. This shall enable the features meantioned below
 
 # Features available currently
 1) Deirvative tools -  function `fornberg` to calculate weights of finite-difference formulas for arbitrary grid spacing.
-2) Spectral tools - Discrete fourier transform function `DFT_1`, `DFT_2`, `DIT_FFT_radix2` and `DIT_FFT_radix2_mem` which are basically less-effective but accurate version of Fast Fourier transform `fft` function in [FFTW package](https://github.com/JuliaMath/FFTW.jl).
+2) Spectral tools - Discrete fourier transform function `DFT_1`, `DFT_2`, `DIT_FFT_radix2` and `DIT_FFT_radix2_mem` which are basically less-effective but accurate version of Fast Fourier transform `fft` function in [FFTW package](https://github.com/JuliaMath/FFTW.jl). 
+
+**Note:** You may enter help mode in julia by pressing `?` and entering the name of features, say `fornberg` to see the description of the feature
