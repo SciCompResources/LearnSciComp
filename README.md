@@ -30,6 +30,7 @@ Central difference FD for second derivative, with order of accuracy= 2
 Consider,            i = 0,  Δx = 1
          therefore,  weights should be {1 , -2, 1}
 """
+using LearnSciComp
 order = 2;      z = 0;      x = [-1, 0, 1];
 julia> fornberg(order, z, x)
 3-element Vector{Float64}:
