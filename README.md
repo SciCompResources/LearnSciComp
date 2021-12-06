@@ -22,6 +22,21 @@ The guidelines and scope of contributions(pull-requests) that are accepted is al
 
 ## Features available currently
 1) Deirvative tools -  function `fornberg` to calculate weights of finite-difference formulas for arbitrary grid spacing.
+```julia
+"""
+Central difference FD for second derivative, with order of accuracy= 2
+    u''(xᵢ) = ( u(xᵢ-₁) - 2.u(xᵢ) + u(xᵢ+₁) ) / (Δx)^2
+
+Consider,            i = 0,  Δx = 1
+         therefore,  weights should be {1 , -2, 1}
+"""
+order = 2;      z = 0;      x = [-1, 0, 1];
+julia> fornberg(order, z, x)
+3-element Vector{Float64}:
+  1.0
+ -2.0
+  1.0
+```
 2) Spectral tools - Discrete fourier transform function `DFT_1`, `DFT_2`, `DIT_FFT_radix2` and `DIT_FFT_radix2_mem` which are basically less-effective but accurate version of Fast Fourier transform `fft` function in [FFTW package](https://github.com/JuliaMath/FFTW.jl). 
 
 **Note:** You may enter help mode in julia by pressing `?` and entering the name of features, say `fornberg` to see the description of the feature
