@@ -1,9 +1,9 @@
 using FFTW
 using Memoize
 
-"""DFT_1 function, a naive O(𝑁²) method
 """
-# DFT_1 is plain definition of DFT... O(𝑁²)
+DFT_1 function, a naive O(𝑁²) method
+"""
 function DFT_1(x::AbstractArray; 𝑁::Int = length(x))
     X::Array{ComplexF64} = zeros(ComplexF64, 𝑁)
     for k ∈ 1:𝑁
@@ -15,9 +15,9 @@ function DFT_1(x::AbstractArray; 𝑁::Int = length(x))
 end
 
 
-"""DFT_2 function, a less-naive O(𝑁²/2 + 𝑁) method
 """
-# DFT_2 with Little improvement over... O(𝑁²)
+DFT_2 function, a less-naive O(𝑁²/2 + 𝑁) method
+"""
 function DFT_2(x::AbstractArray; 𝑁::Int = length(x))
     X::Array{ComplexF64} = zeros(ComplexF64, 𝑁)
     for k ∈ 1:(𝑁÷2 + 1)
@@ -32,9 +32,10 @@ function DFT_2(x::AbstractArray; 𝑁::Int = length(x))
 end
 
 
-"""DIT_FFT_radix2, a Cooley_Tuckey_FFT radix 2,  O(𝑁 . log(𝑁)) method
 """
-# Cooley_Tuckey_FFT radix 2, based on divide and conquer
+DIT_FFT_radix2, a Cooley_Tuckey_FFT radix 2,  O(𝑁 . log(𝑁)) method, 
+based on divide and conquer
+"""
 function DIT_FFT_radix2(x::AbstractArray; 𝑁::Int64 = length(x))
     X₁ = Vector{ComplexF64}()
     X₂ = Vector{ComplexF64}()
@@ -52,9 +53,9 @@ function DIT_FFT_radix2(x::AbstractArray; 𝑁::Int64 = length(x))
 end
 
 
-"""memoized a Cooley_Tuckey_FFT radix 2,  O(𝑁 . log(𝑁)) method
 """
-# Memoization of Cooley_Tuckey_FFT radix 2, based on divide and conquer
+memoized a Cooley_Tuckey_FFT radix 2,  O(𝑁 . log(𝑁)) method
+"""
 @memoize function DIT_FFT_radix2_mem(x::AbstractArray; 𝑁::Int64 = length(x))
     X₁ = Vector{ComplexF64}()
     X₂ = Vector{ComplexF64}()
