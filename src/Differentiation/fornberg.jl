@@ -9,7 +9,7 @@
 Output Parameter
     c[0:nd,0:m] weights at grid locations x[0:n] for derivatives of order 0:m, found in c[0:n,0:m]
 """
-function fornberg(m::Int, z::S, x::AbstractVector; nd = length(x)) where S <: Real
+@views function fornberg(m::Int, z::S, x::AbstractVector; nd = length(x)) where S <: Real
     nd >= m || error("number of data-points must be larger than order of derivative")
     n = nd - 1;    #
     c1 = one(S);
@@ -47,7 +47,7 @@ end
 Based on MATLAB routine in paper , An algorithm for calculating Hermite-based finite difference weights by Bengt Fornberg.
 Paper found at https://www.colorado.edu/amath/sites/default/files/attached-files/2020_f_hermite-fd_ima_j_num_anal.pdf
 """
-function fornberg_hermite(m::Int, z::S, x::AbstractVector) where S <: Real
+@views function fornberg_hermite(m::Int, z::S, x::AbstractVector) where S <: Real
     nd = length(x);
     c = zeros(m+2, nd);
     c[2,1] = 1;
