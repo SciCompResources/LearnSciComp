@@ -1,5 +1,6 @@
 module LearnSciComp
 
+using LinearAlgebra
 using Test
 using FFTW
 using Plots
