@@ -31,7 +31,9 @@ Consider,            i = 0,  Δx = 1
          therefore,  weights should be {1 , -2, 1}
 """
 using LearnSciComp
-order = 2;      z = 0;      x = [-1, 0, 1];
+order = 2;  # order of derivative you wish to approximate     
+z = 0;      # location of point at which you wish to approximate the derivative
+x = [-1, 0, 1];  # grid points over which the stencil is extended
 julia> fornberg(order, z, x)
 3-element Vector{Float64}:
   1.0
