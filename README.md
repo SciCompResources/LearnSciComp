@@ -40,6 +40,16 @@ julia> fornberg(order, z, x)
  -2.0
   1.0
 ```
+You may also find hermite-based finite difference weights for arbitrary grid spacing by providing an optional argument `dfdx = true` as follows
+```julia
+order = 2;  # order of derivative you wish to approximate     
+z = 0;      # location of point at which you wish to approximate the derivative, using weights of `f(x)` and `f'(x)`
+x = [-1, 0, 1];  # grid points over which the stencil is extended
+julia> d, e = fornberg(order, z, x;dfdx = true)
+([2.0, -4.0, 2.0], [0.5, 0.0, -0.5]) 
+```
+where, `d` consists of weights of `f(x)` and `e` contains weights of `f'(x)`
+
 2) Spectral tools - Discrete fourier transform function `DFT_1`, `DFT_2`, `DIT_FFT_radix2` and `DIT_FFT_radix2_mem` which are basically less-effective but accurate version of Fast Fourier transform `fft` function in [FFTW package](https://github.com/JuliaMath/FFTW.jl). 
 
 **Note:** You may enter help mode in julia by pressing `?` and entering the name of features, say `fornberg` to see the description of the feature
