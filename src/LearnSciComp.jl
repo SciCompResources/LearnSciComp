@@ -3,8 +3,6 @@ module LearnSciComp
 using LinearAlgebra
 using Test
 using FFTW
-using Plots
-using Plotly
 using Memoize
 using BenchmarkTools
 
