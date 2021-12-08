@@ -63,7 +63,7 @@ Paper found at https://www.colorado.edu/amath/sites/default/files/attached-files
         c[2:mn+1,1:i-1] .= ((x[i]-z)*c[2:mn+1,1:i-1] - rmat[1:mn,1:i-1].*c[1:mn,1:i-1])./transpose(x[i] .- x[1:i-1]);
     end
     c2 = zeros(m+2, nd)
-    cp = cumprod([1; 1:m])
+    cp = factorial.(0:m)
     c = c[setdiff(1:end, 1), :]
     cc = c./cp
     for k=1:m+1
