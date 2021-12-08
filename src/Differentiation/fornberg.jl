@@ -12,7 +12,8 @@ Output Parameter
     c : weights to approximate derivative using function values only (dfdx == false)
     d ,e : weights to approximate derivative using function and its first derivative values (dfdx == true)
 """
-function fornberg(m::Int, z::S, x::AbstractVector; nd = length(x); dfdx::Bool = false) where S <: Real
+function fornberg(m::Int, z::S, x::AbstractVector; dfdx::Bool = false) where S <: Real
+    nd = length(x)
     nd >= m || error("number of data-points must be larger than order of derivative")
     n = nd - 1;    #
     c1 = one(S);
